@@ -1,0 +1,86 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="relative m-8 flex items-center before:absolute md:my-14 md:ml-[6.06rem] md:mr-[6.12rem] md:gap-[4.93rem] md:before:-left-[2.75rem] md:before:-top-14 md:before:h-[6.5rem] md:before:w-[0.0625rem] md:before:bg-[#C8CCD8] xl:ml-[10.25rem] xl:mr-[10.31rem] xl:gap-[5.93rem] xl:before:-left-[5.37rem]"
+>
+  <div class="flex items-center justify-between gap-[13.12rem]">
+    <a href="/" class=""><img src="/images/logo.svg" alt="" /></a>
+    <img
+      src="/images/icons/icon-hamburger.svg"
+      alt=""
+      class="md:max-2xl:hidden"
+      id="openMenu"
+    />
+  </div>
+  <!-- Mobile Menu -->
+  <nav
+    class="absolute left-0 top-24 hidden h-[14.6875rem] w-[21.4375rem] bg-[#EEEFF4] px-12 pb-[2.62rem] pt-[2.44rem]"
+    id="menuBar"
+  >
+    <ul class="flex flex-col gap-[1.06rem]">
+      <li>
+        <a
+          href="/portfolio"
+          class="cursor-pointer text-[2rem] font-bold leading-10 text-[#1B1D23] transition-colors duration-300 ease-in hover:text-[#7D828F]"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="ease- cursor-pointer text-[2rem] font-bold leading-10 text-[#1B1D23] transition-colors duration-300 hover:text-[#7D828F]"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="cursor-pointer text-[2rem] font-bold leading-10 text-[#1B1D23] transition-colors duration-300 ease-in hover:text-[#7D828F]"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Tablet & Desktop Menu -->
+  <nav class="hidden md:flex">
+    <ul class="flex items-center justify-between gap-[3.81rem]">
+      <li>
+        <a
+          href="/portfolio"
+          class="cursor-pointer text-lg font-bold leading-[1.5625rem] text-[#7D828F] transition-colors duration-300 ease-in hover:text-[#1B1D23]"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="ease- cursor-pointer text-lg font-bold leading-[1.5625rem] text-[#7D828F] transition-colors duration-300 hover:text-[#1B1D23]"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="cursor-pointer text-lg font-bold leading-[1.5625rem] text-[#7D828F] transition-colors duration-300 ease-in hover:text-[#1B1D23]"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.getElementById("openMenu");
+  const menuBar = document.getElementById("menuBar");
+  openMenu.addEventListener("click", () => {
+    menuBar.classList.toggle("hidden");
+  });
+</script>
