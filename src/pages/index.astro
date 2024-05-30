@@ -7,5 +7,58 @@ import "@/styles/globals.css";
 <Layout title="Arch Studio Website Challenge.">
   <!-- The Haeder -->
   <Header />
-  <main></main>
+  <main class="">
+    <!-- Project Paramour -->
+    <section
+      class="relative before:absolute before:top-[3.063rem] before:rotate-90 before:text-lg before:font-medium before:leading-6 before:tracking-[1.125rem] before:content-['HOME'] md:before:-left-2 md:before:text-[#C8CCD8] xl:before:left-4"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/home/desktop/image-hero-paramour.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/home/tablet/image-hero-paramour.jpg"
+        />
+        <img
+          src="/images/home/mobile/image-hero-paramour.jpg"
+          alt=""
+          class="md:ml-[6.06rem] md:mr-[6.13rem] xl:mx-[10.31rem]"
+        />
+      </picture>
+      <div
+        class="absolute top-0 flex h-[100%] w-[100%] flex-col gap-[5.19rem] px-8 pb-[6.88rem] pt-[7.5rem] md:gap-[2.56rem] md:px-[9.69rem] md:pb-[11.19rem] md:pt-[11.62rem] xl:pl-[22.09rem]"
+      >
+        <div class="flex flex-col gap-[0.63rem]">
+          <h1
+            class="w-[19.4375rem] text-[3rem] font-bold leading-[3rem] tracking-[-0.075rem] text-white md:w-[28.5625rem] md:text-8xl md:leading-[5rem] md:tracking-[-0.125rem] xl:w-[34rem]"
+          >
+            Project Paramour
+          </h1>
+          <p
+            class="w-[19.4375rem] text-lg font-medium leading-6 text-white md:w-[28.5625rem] xl:w-[27.8125rem]"
+          >
+            Project made for an art museum near Southwest London. Project
+            Paramour is a statement of bold, modern architecture.
+          </p>
+        </div>
+        <div class="">
+          <a
+            href="/portfolio"
+            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white"
+            >See Our Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+              ><g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FFFFFF"
+                stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
