@@ -10,7 +10,8 @@ import "@/styles/globals.css";
   <main class="">
     <!-- Project Paramour -->
     <section
-      class="relative before:absolute before:top-[3.063rem] before:rotate-90 before:text-lg before:font-medium before:leading-6 before:tracking-[1.125rem] before:content-['HOME'] md:before:-left-2 md:before:text-[#C8CCD8] xl:before:left-4"
+      class="relative overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      id="projectParamour"
     >
       <picture>
         <source
@@ -28,7 +29,7 @@ import "@/styles/globals.css";
         />
       </picture>
       <div
-        class="absolute top-0 flex h-[100%] w-[100%] flex-col gap-[5.19rem] px-8 pb-[6.88rem] pt-[7.5rem] md:gap-[2.56rem] md:px-[9.69rem] md:pb-[11.19rem] md:pt-[11.62rem] xl:pl-[22.09rem]"
+        class="absolute left-0 top-0 flex h-auto w-auto flex-col gap-[5.19rem] bg-black/50 pb-[6.87rem] pl-8 pr-9 pt-[7.25rem] md:left-[6.06rem] md:gap-[2.56rem] md:px-[3.63rem] md:pb-[11.19rem] md:pt-[11.63rem] xl:left-[10.31rem] xl:pl-[11.87rem] xl:pr-[23.5rem]"
       >
         <div class="flex flex-col gap-[0.63rem]">
           <h1
@@ -46,7 +47,7 @@ import "@/styles/globals.css";
         <div class="">
           <a
             href="/portfolio"
-            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white"
+            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
             >See Our Portfolio
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
               ><g
@@ -60,5 +61,223 @@ import "@/styles/globals.css";
         </div>
       </div>
     </section>
+    <!-- Seraph Station -->
+    <section
+      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      id="seraphStation"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/home/desktop/image-hero-seraph.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/home/tablet/image-hero-seraph.jpg"
+        />
+        <img
+          src="/images/home/mobile/image-hero-seraph.jpg"
+          alt=""
+          class="md:ml-[6.06rem] md:mr-[6.13rem] xl:mx-[10.31rem]"
+        />
+      </picture>
+      <div
+        class="absolute left-0 top-0 flex h-auto w-auto flex-col gap-[5.19rem] bg-black/50 pb-[6.87rem] pl-8 pr-9 pt-[7.25rem] md:left-[6.06rem] md:gap-[2.56rem] md:px-[3.63rem] md:pb-[11.19rem] md:pt-[11.63rem] xl:left-[10.31rem] xl:pl-[11.87rem] xl:pr-[23.5rem]"
+      >
+        <div class="flex flex-col gap-[0.63rem]">
+          <h1
+            class="w-[19.4375rem] text-[3rem] font-bold leading-[3rem] tracking-[-0.075rem] text-white md:w-[28.5625rem] md:text-8xl md:leading-[5rem] md:tracking-[-0.125rem] xl:w-[34rem]"
+          >
+            Seraph Station
+          </h1>
+          <p
+            class="w-[19.4375rem] text-lg font-medium leading-6 text-white md:w-[28.5625rem] xl:w-[27.8125rem]"
+          >
+            The Seraph Station project challenged us to design a unique station
+            that would transport people through time. The result is a fresh and
+            futuristic model inspired by space stations.
+          </p>
+        </div>
+        <div class="">
+          <a
+            href="/portfolio"
+            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+            >See Our Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+              ><g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FFFFFF"
+                stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Federal II Tower -->
+    <section
+      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      id="federalIITower"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/home/desktop/image-hero-federal.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/home/tablet/image-hero-federal.jpg"
+        />
+        <img
+          src="/images/home/mobile/image-hero-federal.jpg"
+          alt=""
+          class="md:ml-[6.06rem] md:mr-[6.13rem] xl:mx-[10.31rem]"
+        />
+      </picture>
+      <div
+        class="absolute left-0 top-0 flex h-auto w-auto flex-col gap-[5.19rem] bg-black/50 pb-[6.87rem] pl-8 pr-9 pt-[7.25rem] md:left-[6.06rem] md:gap-[2.56rem] md:px-[3.63rem] md:pb-[11.19rem] md:pt-[11.63rem] xl:left-[10.31rem] xl:pl-[11.87rem] xl:pr-[23.5rem]"
+      >
+        <div class="flex flex-col gap-[0.63rem]">
+          <h1
+            class="w-[19.4375rem] text-[3rem] font-bold leading-[3rem] tracking-[-0.075rem] text-white md:w-[28.5625rem] md:text-8xl md:leading-[5rem] md:tracking-[-0.125rem] xl:w-[34rem]"
+          >
+            Federal II Tower
+          </h1>
+          <p
+            class="w-[19.4375rem] text-lg font-medium leading-6 text-white md:w-[28.5625rem] xl:w-[27.8125rem]"
+          >
+            A sequel theme project for a tower originally built in the 1800s. We
+            achieved this with a striking look of brutal minimalism with modern
+            touches.
+          </p>
+        </div>
+        <div class="">
+          <a
+            href="/portfolio"
+            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+            >See Our Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+              ><g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FFFFFF"
+                stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Trinity Bank Tower -->
+    <section
+      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      id="trinityBankTower"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/home/desktop/image-hero-trinity.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/home/tablet/image-hero-trinity.jpg"
+        />
+        <img
+          src="/images/home/mobile/image-hero-trinity.jpg"
+          alt=""
+          class="md:ml-[6.06rem] md:mr-[6.13rem] xl:mx-[10.31rem]"
+        />
+      </picture>
+      <div
+        class="absolute left-0 top-0 flex h-auto w-auto flex-col gap-[5.19rem] bg-black/50 pb-[6.87rem] pl-8 pr-9 pt-[7.25rem] md:left-[6.06rem] md:gap-[2.56rem] md:px-[3.63rem] md:pb-[11.19rem] md:pt-[11.63rem] xl:left-[10.31rem] xl:pl-[11.87rem] xl:pr-[23.5rem]"
+      >
+        <div class="flex flex-col gap-[0.63rem]">
+          <h1
+            class="w-[19.4375rem] text-[3rem] font-bold leading-[3rem] tracking-[-0.075rem] text-white md:w-[28.5625rem] md:text-8xl md:leading-[5rem] md:tracking-[-0.125rem] xl:w-[34rem]"
+          >
+            Trinity Bank Tower
+          </h1>
+          <p
+            class="w-[19.4375rem] text-lg font-medium leading-6 text-white md:w-[28.5625rem] xl:w-[27.8125rem]"
+          >
+            Trinity Bank challenged us to make a concept for a 84 story building
+            located in the middle of a city with a high earthquake frequency.
+            For this project we used curves to blend design and stability to
+            meet our objectives.
+          </p>
+        </div>
+        <div class="">
+          <a
+            href="/portfolio"
+            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+            >See Our Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+              ><g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FFFFFF"
+                stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Slider Button -->
+    <section class="relative -top-20 ml-[5.31rem] hidden xl:flex">
+      <button
+        id="projectParamourImg"
+        type="button"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        >01</button
+      >
+      <button
+        id="seraphStationImg"
+        type="button"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        >02</button
+      >
+      <button
+        id="federalIITowerImg"
+        type="button"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        >03</button
+      >
+      <button
+        id="trinityBankTowerImg"
+        type="button"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        >04</button
+      >
+    </section>
+
+    <!-- Welcome to Arch Studio -->
+    <section
+      class="mx-8 mb-[7.06rem] mt-[8.81rem] md:mb-[14.56rem] md:ml-[6.06rem] md:mr-[6.13rem] md:mt-[15.5rem] xl:mx-[10.31rem] xl:my-48"
+    >
+      <div class=""></div>
+    </section>
   </main>
 </Layout>
+
+<script is:inline>
+  // Select all buttons
+  const buttons = document.querySelectorAll("button");
+
+  // Select all sections
+  const sections = document.querySelectorAll("section");
+
+  // Add event listeners to each button
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      // Hide all sections
+      sections.forEach((section) => {
+        section.classList.add("hidden");
+      });
+
+      // Show the corresponding section based on the button index
+      sections[index].classList.remove("hidden");
+    });
+  });
+</script>
