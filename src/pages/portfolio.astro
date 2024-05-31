@@ -1,0 +1,40 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Arch Studio Website Challenge.">
+  <!-- The Haeder -->
+  <Header />
+  <main class="">
+    <section
+      class="relative md:after:absolute md:after:right-6 md:after:top-[1.81rem] md:after:text-[15.625rem] md:after:font-bold md:after:leading-[12.5rem] md:after:tracking-[-0.3125rem] md:after:text-white/50 md:after:content-['1'] xl:after:-right-4"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/portfolio/desktop/image-del-sol.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/portfolio/tablet/image-del-sol.jpg"
+        />
+        <img src="/images/portfolio/mobile/image-del-sol.jpg" alt="" class="" />
+      </picture>
+      <div
+        class="absolute bottom-0 left-0 flex h-[100%] w-[100%] flex-col justify-end bg-black/50 px-6 pb-[1.44rem] md:pb-[2.44rem] md:pl-10"
+      >
+        <h3 class="text-[2rem] font-bold leading-10 text-white">
+          Project Del Sol
+        </h3>
+        <a href="/portfolio" class="text-lg font-medium leading-6 text-white"
+          >View All Projects</a
+        >
+      </div>
+    </section>
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>

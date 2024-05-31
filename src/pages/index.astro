@@ -2,6 +2,7 @@
 import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="Arch Studio Website Challenge.">
@@ -10,7 +11,7 @@ import "@/styles/globals.css";
   <main class="">
     <!-- Project Paramour -->
     <section
-      class="relative overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      class="sections relative overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
       id="projectParamour"
     >
       <picture>
@@ -47,7 +48,7 @@ import "@/styles/globals.css";
         <div class="">
           <a
             href="/portfolio"
-            class="font-cold flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+            class="flex h-[4.5rem] w-[15.75rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
             >See Our Portfolio
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
               ><g
@@ -63,7 +64,7 @@ import "@/styles/globals.css";
     </section>
     <!-- Seraph Station -->
     <section
-      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      class="sections relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
       id="seraphStation"
     >
       <picture>
@@ -117,7 +118,7 @@ import "@/styles/globals.css";
     </section>
     <!-- Federal II Tower -->
     <section
-      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      class="sections relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
       id="federalIITower"
     >
       <picture>
@@ -171,7 +172,7 @@ import "@/styles/globals.css";
     </section>
     <!-- Trinity Bank Tower -->
     <section
-      class="relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
+      class="sections relative hidden overflow-hidden md:md:before:absolute md:before:top-[3.063rem] md:md:before:-left-2 md:before:rotate-90 md:before:text-lg md:before:font-medium md:before:leading-6 md:before:tracking-[1.125rem] md:before:text-[#C8CCD8] md:before:content-['HOME'] xl:before:left-4"
       id="trinityBankTower"
     >
       <picture>
@@ -229,36 +230,247 @@ import "@/styles/globals.css";
       <button
         id="projectParamourImg"
         type="button"
-        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] focus:bg-[#1B1D23] focus:text-white"
         >01</button
       >
       <button
         id="seraphStationImg"
         type="button"
-        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] focus:bg-[#1B1D23] focus:text-white"
         >02</button
       >
       <button
         id="federalIITowerImg"
         type="button"
-        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] focus:bg-[#1B1D23] focus:text-white"
         >03</button
       >
       <button
         id="trinityBankTowerImg"
         type="button"
-        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] active:bg-[#1B1D23] active:text-white"
+        class="size-20 bg-white text-lg font-bold leading-[1.5625rem] text-[#7D828F] focus:bg-[#1B1D23] focus:text-white"
         >04</button
       >
     </section>
-
     <!-- Welcome to Arch Studio -->
     <section
-      class="mx-8 mb-[7.06rem] mt-[8.81rem] md:mb-[14.56rem] md:ml-[6.06rem] md:mr-[6.13rem] md:mt-[15.5rem] xl:mx-[10.31rem] xl:my-48"
+      class="relative mx-8 mb-[7.06rem] mt-[8.81rem] flex items-end justify-between md:mb-[14.56rem] md:ml-[6.06rem] md:mr-[6.13rem] md:mt-[12.5rem] xl:mx-[10.31rem] xl:mb-48 xl:mt-20"
     >
-      <div class=""></div>
+      <div
+        class="flex flex-col gap-6 before:absolute before:-top-[4.25rem] before:left-0 before:h-[0.0625rem] before:w-[4.0625rem] before:bg-[#C8CCD8] md:text-[#EEEFF4] md:before:-top-36 md:before:left-8 md:before:w-0 md:before:text-[7.5rem] md:before:font-bold md:before:leading-[12.5rem] md:before:tracking-[-0.1875rem] md:before:content-['Welcome'] xl:ml-[13.12rem] xl:before:left-[-2.188rem] xl:before:top-[-4.938rem] xl:before:text-[15.625rem] xl:before:leading-[12.5rem] xl:before:tracking-[-0.3125rem]"
+      >
+        <h2
+          class="text-5xl font-bold leading-[3.25rem] tracking-[-0.10713rem] text-[#1B1D23] md:w-[27.875rem] md:text-[4.5rem] md:leading-[4rem] md:tracking-[-0.125rem]"
+        >
+          Welcome to Arch Studio
+        </h2>
+        <p
+          class="text-lg font-medium leading-6 text-[#60636D] md:w-[35.75rem] xl:w-[27.8125rem]"
+        >
+          We have a unique network and skillset to help bring your projects to
+          life. Our small team of highly skilled individuals combined with our
+          large network put us in a strong position to deliver exceptional
+          results.
+        </p>
+        <p
+          class="text-lg font-medium leading-6 text-[#60636D] md:w-[35.75rem] xl:w-[27.8125rem]"
+        >
+          Over the past 10 years, we have worked on all kinds of projects. From
+          stations to high-rise buildings, we create spaces that inspire and
+          delight.
+        </p>
+        <p
+          class="text-lg font-medium leading-6 text-[#60636D] md:w-[35.75rem] xl:w-[27.8125rem]"
+        >
+          We work closely with our clients so that we understand the intricacies
+          of each project. This allows us to work in harmony the surrounding
+          area to create truly stunning projects that will stand the test of
+          time.
+        </p>
+      </div>
+      <div class="hidden xl:flex">
+        <img src="/images/home/desktop/image-welcome.jpg" alt="" class="" />
+      </div>
+    </section>
+    <!-- Small team, Big ideas -->
+    <section
+      class="relative overflow-hidden md:ml-[6.06rem] md:mr-[6.13rem] xl:mx-[10.31rem]"
+    >
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/home/desktop/image-small-team.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/home/tablet/image-small-team.jpg"
+        />
+        <img src="/images/home/mobile/image-small-team.jpg" alt="" class="" />
+        <div
+          class="absolute right-0 top-0 flex h-[100%] w-[100%] flex-col gap-[1.69rem] bg-black/50 px-8 pb-[11.25rem] pt-[11.31rem] md:left-[-6.06rem] md:ml-[6.06rem] md:mr-[6.13rem] md:pb-[10.5rem] md:pl-[3.63rem] md:pr-[4.37rem] md:pt-[10.44rem] xl:left-[-10.31rem] xl:mx-[10.31rem] xl:pl-[11.87rem]"
+        >
+          <h2
+            class="w-[18.4375rem] text-5xl font-bold not-italic leading-[3.25rem] tracking-[-0.10713rem] text-white md:w-[27.8125rem] md:text-7xl md:leading-[4rem] md:tracking-[-0.125rem]"
+          >
+            Small team, big ideas
+          </h2>
+          <a
+            href="/about"
+            class="flex h-[4.5rem] w-[11.6875rem] items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold not-italic leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+            >About Us
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+              ><g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#FFFFFF"
+                stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </picture>
+    </section>
+    <!-- Featured -->
+    <section
+      class="mx-8 mb-[8.25rem] mt-[4.56rem] flex flex-col gap-[2.69rem] md:ml-[6.06rem] md:mr-[6.13rem] md:mt-[12.94rem] md:gap-[5.38rem] xl:mx-[10.31rem] xl:my-[12.5rem]"
+    >
+      <div class="flex items-center justify-between">
+        <h2
+          class="text-5xl font-bold leading-[3.25rem] tracking-[-0.10713rem] text-[#1B1D23] md:text-7xl md:leading-[4rem] md:tracking-[-0.125rem]"
+        >
+          Featured
+        </h2>
+        <a
+          href="/portfolio"
+          class="hidden h-[4.5rem] w-[10.5625rem] cursor-pointer bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D] md:flex md:items-center md:justify-evenly"
+          >See All
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+            ><g
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#FFFFFF"
+              stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+            ></svg
+          >
+        </a>
+      </div>
+      <div class="flex flex-col gap-6 xl:flex-row xl:gap-[1.88rem]">
+        <!-- Project Del Sol -->
+        <div
+          class="relative md:after:absolute md:after:right-6 md:after:top-[1.81rem] md:after:text-[15.625rem] md:after:font-bold md:after:leading-[12.5rem] md:after:tracking-[-0.3125rem] md:after:text-white/50 md:after:content-['1'] xl:after:-right-4"
+        >
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/images/portfolio/desktop/image-del-sol.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/portfolio/tablet/image-del-sol.jpg"
+            />
+            <img
+              src="/images/portfolio/mobile/image-del-sol.jpg"
+              alt=""
+              class=""
+            />
+          </picture>
+          <div
+            class="absolute bottom-0 left-0 flex h-[100%] w-[100%] flex-col justify-end bg-black/50 px-6 pb-[1.44rem] md:pb-[2.44rem] md:pl-10"
+          >
+            <h3 class="text-[2rem] font-bold leading-10 text-white">
+              Project Del Sol
+            </h3>
+            <a
+              href="/portfolio"
+              class="text-lg font-medium leading-6 text-white"
+              >View All Projects</a
+            >
+          </div>
+        </div>
+        <!-- 228B Tower -->
+        <div
+          class="relative md:after:absolute md:after:right-6 md:after:top-[1.81rem] md:after:text-[15.625rem] md:after:font-bold md:after:leading-[12.5rem] md:after:tracking-[-0.3125rem] md:after:text-white/50 md:after:content-['2'] xl:after:-right-4"
+        >
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/images/portfolio/desktop/image-228b.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/portfolio/tablet/image-228b.jpg"
+            />
+            <img
+              src="/images/portfolio/mobile/image-228b.jpg"
+              alt=""
+              class=""
+            />
+          </picture>
+          <div
+            class="absolute bottom-0 left-0 flex h-[100%] w-[100%] flex-col justify-end bg-black/50 px-6 pb-[1.44rem] md:pb-[2.44rem] md:pl-10"
+          >
+            <h3 class="text-[2rem] font-bold leading-10 text-white">
+              228B Tower
+            </h3>
+            <a
+              href="/portfolio"
+              class="text-lg font-medium leading-6 text-white"
+              >View All Projects</a
+            >
+          </div>
+        </div>
+        <!-- Le Prototype -->
+        <div
+          class="relative md:after:absolute md:after:right-6 md:after:top-[1.81rem] md:after:text-[15.625rem] md:after:font-bold md:after:leading-[12.5rem] md:after:tracking-[-0.3125rem] md:after:text-white/50 md:after:content-['3'] xl:after:-right-4"
+        >
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/images/portfolio/desktop/image-prototype.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/portfolio/tablet/image-prototype.jpg"
+            />
+            <img
+              src="/images/portfolio/mobile/image-prototype.jpg"
+              alt=""
+              class=""
+            />
+          </picture>
+          <div
+            class="absolute bottom-0 left-0 flex h-[100%] w-[100%] flex-col justify-end bg-black/50 px-6 pb-[1.44rem] md:pb-[2.44rem] md:pl-10"
+          >
+            <h3 class="text-[2rem] font-bold leading-10 text-white">
+              Le Prototype
+            </h3>
+            <a
+              href="/portfolio"
+              class="text-lg font-medium leading-6 text-white"
+              >View All Projects</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <a
+          href="/portfolio"
+          class="flex h-[4.5rem] w-[19.4375rem] cursor-pointer items-center justify-center gap-6 bg-[#1B1D23] text-lg font-bold leading-[1.5625rem] text-white transition-colors duration-300 ease-in hover:bg-[#60636D]"
+          >See All
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"
+            ><g
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#FFFFFF"
+              stroke-width="2"><path d="M15 1l9 9-9 9M0 10h24"></path></g
+            ></svg
+          >
+        </a>
+      </div>
     </section>
   </main>
+  <!-- The Footer -->
+  <Footer />
 </Layout>
 
 <script is:inline>
@@ -266,14 +478,14 @@ import "@/styles/globals.css";
   const buttons = document.querySelectorAll("button");
 
   // Select all sections
-  const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll(".sections");
 
   // Add event listeners to each button
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
       // Hide all sections
-      sections.forEach((section) => {
-        section.classList.add("hidden");
+      sections.forEach((sections) => {
+        sections.classList.add("hidden");
       });
 
       // Show the corresponding section based on the button index
